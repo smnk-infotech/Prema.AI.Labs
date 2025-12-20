@@ -5,9 +5,8 @@ import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { ArrowRight, Brain, Shield, Zap, Layers, Box } from 'lucide-react';
 import Link from 'next/link';
-import Footer from './components/Footer';
 
-// Dynamic imports for 3D components to ensure they run client-side
+{/* FOOTER removed (global) */ }
 const HeroScene = dynamic(() => import('./components/HeroScene'), {
     ssr: false,
     loading: () => <div className="w-full h-full bg-slate-50/20 animate-pulse rounded-full blur-3xl opacity-50" />
@@ -209,8 +208,6 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* FOOTER */}
-            <Footer />
         </main>
     );
 }

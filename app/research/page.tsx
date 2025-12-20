@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Footer from '../components/Footer';
 
 const PAPERS = [
     {
@@ -111,7 +110,6 @@ export default function ResearchPage() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </main>
     );
 }

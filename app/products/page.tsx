@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { Layers, Box, Cpu, GraduationCap, Briefcase, Sparkles } from 'lucide-react';
-import Footer from '../components/Footer';
 
 export default function ProductsPage() {
     return (
@@ -126,7 +125,6 @@ export default function ProductsPage() {
                 </div>
             </section>
 
-            <Footer />
         </main>
     );
 }

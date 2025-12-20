@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Footer from '../components/Footer';
 
 export default function TermsPage() {
     return (
@@ -41,7 +40,6 @@ export default function TermsPage() {
                     </div>
                 </motion.div>
             </div>
-            <Footer />
         </main>
     );
 }

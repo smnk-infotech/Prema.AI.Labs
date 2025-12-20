@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import Footer from '../../components/Footer';
 
 // Dummy content map (in a real app, this would be fetched)
 const ARTICLES: Record<string, { title: string; date: string; content: string }> = {
@@ -75,7 +74,6 @@ export default async function ArticlePage({ params }: PageProps) {
                     />
                 </motion.div>
             </div>
-            <Footer />
         </main>
     );
 }

@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Footer from '../components/Footer';
 
 export default function PrivacyPage() {
     return (
@@ -47,7 +46,6 @@ export default function PrivacyPage() {
                     </div>
                 </motion.div>
             </div>
-            <Footer />
         </main>
     );
 }

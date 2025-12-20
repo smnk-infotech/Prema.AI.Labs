@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Footer from '../components/Footer';
 
 const JOBS = [
     { title: 'Founding AI Engineer', location: 'San Francisco', type: 'Full-time' },
@@ -75,7 +74,6 @@ export default function CareersPage() {
                 </motion.div>
 
             </div>
-            <Footer />
         </main>
     );
 }

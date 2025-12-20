@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
-import Footer from '../components/Footer';
 
 export default function AboutPage() {
     return (
@@ -100,7 +99,6 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <Footer />
         </main>
     );
 }

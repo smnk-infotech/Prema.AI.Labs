@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { Mail, MessageSquare, MapPin } from 'lucide-react';
-import Footer from '../components/Footer';
 
 export default function ContactPage() {
     return (
@@ -104,7 +103,6 @@ export default function ContactPage() {
                     </motion.form>
                 </div>
             </div>
-            <Footer />
         </main>
     );
 }

@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Footer from '../components/Footer';
 
 export default function EthicsPage() {
     return (
@@ -52,7 +51,6 @@ export default function EthicsPage() {
                 </div>
             </section>
 
-            <Footer />
         </main>
     );
 }
