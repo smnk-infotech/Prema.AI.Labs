@@ -3,10 +3,10 @@
 import { motion } from 'framer-motion';
 
 const JOBS = [
-    { title: 'Founding AI Engineer', location: 'San Francisco', type: 'Full-time' },
-    { title: 'Senior WebGL Artist', location: 'Remote / London', type: 'Contract' },
-    { title: 'Product Designer (Systems)', location: 'New York', type: 'Full-time' },
-    { title: 'Education Outreach Lead', location: 'Coimbatore', type: 'Full-time' }
+    { title: 'AGI Research Scientist', location: 'Coimbatore / Remote', type: 'Full-time' },
+    { title: 'Generative AI Engineer', location: 'Coimbatore', type: 'Full-time' },
+    { title: 'Trust & Safety Architect', location: 'Remote', type: 'Full-time' },
+    { title: 'Education Product Designer', location: 'Coimbatore', type: 'Full-time' }
 ];
 
 export default function CareersPage() {
@@ -20,9 +20,9 @@ export default function CareersPage() {
                     transition={{ duration: 0.8 }}
                     className="mb-24"
                 >
-                    <h1 className="text-6xl font-bold tracking-tight mb-8">Join the Lab.</h1>
-                    <p className="text-xl text-zinc-500 max-w-xl font-light font-serif">
-                        We are building a research-first, curiosity-driven culture. We look for people who think deeply, question assumptions, and care about the ethics of what they build.
+                    <h1 className="text-6xl font-bold tracking-tight mb-8">Join the Mission.</h1>
+                    <p className="text-xl text-zinc-500 max-w-2xl font-light font-serif">
+                        We are building a research-first, curiosity-driven laboratory. We look for the top 1% of thinkers who want to shatter the current cognitive limitations of AI.
                     </p>
                 </motion.div>
 
@@ -68,7 +68,7 @@ export default function CareersPage() {
                     className="mt-24 p-8 border border-dashed border-zinc-200 rounded-3xl text-center"
                 >
                     <p className="text-zinc-500 mb-4">Don't see your role? We're always looking for exceptional researchers.</p>
-                    <a href="mailto:careers@prema.ai" className="text-zinc-900 font-semibold border-b border-zinc-300 hover:border-orange-500 hover:text-orange-600 transition-colors pb-0.5">
+                    <a href="mailto:hello@premaailabs.tech" className="text-zinc-900 font-semibold border-b border-zinc-300 hover:border-orange-500 hover:text-orange-600 transition-colors pb-0.5">
                         Email us your portfolio
                     </a>
                 </motion.div>

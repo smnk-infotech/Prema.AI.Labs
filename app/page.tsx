@@ -62,7 +62,7 @@ export default function Home() {
                         </motion.h1>
 
                         <motion.p variants={itemVariants} className="text-lg lg:text-xl text-slate-500 leading-relaxed mb-10 max-w-md">
-                            Building Context-Aware AI that understands emotion, strategy, and human intent.
+                            Pioneering the dawn of Artificial General Intelligence. Driven by empathy. Engineered to outperform the industry scale.
                         </motion.p>
 
                         <motion.div variants={itemVariants} className="flex gap-4">
@@ -121,7 +121,7 @@ export default function Home() {
                                     A context-aware AI agent platform designed for deep conversations and long-term user understanding.
                                 </p>
                                 <div className="pt-4 flex flex-wrap gap-2">
-                                    {['Viral Scoring', 'Audience Profiling', 'Real-Time Trends'].map((tag) => (
+                                    {['Context Memory', 'Emotional Intel', 'Strategic Reasoning'].map((tag) => (
                                         <span key={tag} className="px-3 py-1 bg-slate-50 text-slate-600 text-xs font-medium rounded-full border border-slate-100">
                                             {tag}
                                         </span>
@@ -153,7 +153,7 @@ export default function Home() {
                                     Build Anything. Just by Talking. Democratizing the creation of 3D, intelligent software.
                                 </p>
                                 <div className="pt-4 flex flex-wrap gap-2">
-                                    {['3DMagic Integration', 'Android Export', 'Student-First'].map((tag) => (
+                                    {['Zero-Code 3D', 'Android Export', 'Voice-to-Build'].map((tag) => (
                                         <span key={tag} className="px-3 py-1 bg-slate-50 text-slate-600 text-xs font-medium rounded-full border border-slate-100">
                                             {tag}
                                         </span>

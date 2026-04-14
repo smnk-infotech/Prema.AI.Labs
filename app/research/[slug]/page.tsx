@@ -1,10 +1,7 @@
-'use client';
-
-import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
-// Dummy content map (in a real app, this would be fetched)
+// Hardcoded content map — all slugs are known at build time
 const ARTICLES: Record<string, { title: string; date: string; content: string }> = {
     'architecture-of-avea': {
         title: 'The Architecture of A.V.E.A',
@@ -37,12 +34,17 @@ const ARTICLES: Record<string, { title: string; date: string; content: string }>
     }
 };
 
+// Required for output: "export" — tells Next.js which dynamic slugs to pre-render
+export function generateStaticParams() {
+    return Object.keys(ARTICLES).map((slug) => ({ slug }));
+}
+
 interface PageProps {
     params: Promise<{ slug: string }>;
 }
 
 export default async function ArticlePage({ params }: PageProps) {
-    const { slug } = await params; // Await params in Next.js 15
+    const { slug } = await params;
     const article = ARTICLES[slug] || {
         title: 'Article Not Found',
         date: '',
@@ -58,11 +60,7 @@ export default async function ArticlePage({ params }: PageProps) {
                     Back to Research
                 </Link>
 
-                <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
-                >
+                <div>
                     <span className="block text-zinc-400 font-medium mb-4">{article.date}</span>
                     <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-12 leading-tight">
                         {article.title}
@@ -72,7 +70,7 @@ export default async function ArticlePage({ params }: PageProps) {
                         className="prose prose-zinc prose-lg max-w-none font-serif text-zinc-700 leading-loose"
                         dangerouslySetInnerHTML={{ __html: article.content }}
                     />
-                </motion.div>
+                </div>
             </div>
         </main>
     );

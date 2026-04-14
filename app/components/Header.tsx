@@ -31,8 +31,8 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-6 lg:px-20 relative flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="text-xl font-bold tracking-tighter text-zinc-900 z-10 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-orange-500"></span>
-                    Prema Labs
+                    <span className="w-2 h-2 rounded-full bg-orange-600"></span>
+                    • Prema AI Labs
                 </Link>
 
                 {/* Desktop Nav */}
@@ -47,10 +47,10 @@ export default function Header() {
                         </Link>
                     ))}
                     <Link
-                        href="/contact"
-                        className="px-5 py-2 rounded-full bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-800 transition-colors shadow-sm"
+                        href="https://premaailabs.tech"
+                        className="px-6 py-2 rounded-full bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-800 transition-all shadow-md hover:shadow-zinc-200"
                     >
-                        Get in Touch
+                        Launch Application
                     </Link>
                 </nav>
 
@@ -80,11 +80,11 @@ export default function Header() {
                             </Link>
                         ))}
                         <Link
-                            href="/contact"
+                            href="https://premaailabs.tech"
                             onClick={() => setIsMobileMenuOpen(false)}
                             className="text-lg font-medium text-orange-600 py-2"
                         >
-                            Get in Touch
+                            Launch Application
                         </Link>
                     </motion.div>
                 )}
