@@ -94,6 +94,13 @@ e:/Prema labs website/
     npm start
     ```
 
+## 🔁 Monorepo Integration Notes (April 2026)
+
+- This site is co-located with the main Prema app workspace and can be bundled into the web build output using:
+  - `web/package.json` script: `npm run build:all`
+- That workflow builds this Next.js app and copies static output into the main web distribution folder under `dist/labs`.
+- Keep shared brand/product messaging consistent with the root project docs in the main repository README.
+
 ## 🎨 Design System
 
 ### Colors
